@@ -1,0 +1,9 @@
+# Development files
+.editorconfig
+.github/
+.gitignore
+.npmrc
+.vscode/
+
+# Tests (already included via package.json "files")
+# Intentionally empty - tests are useful for consumers

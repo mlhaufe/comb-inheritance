@@ -1,0 +1,40 @@
+{
+    "name": "@mlhaufe/comb-inheritance",
+    "version": "1.0.0",
+    "description": "A JavaScript implementation of Comb Inheritance inspired by NewtonScript",
+    "keywords": [
+        "comb-inheritance",
+        "inheritance",
+        "multiple-inheritance",
+        "prototype",
+        "delegation"
+    ],
+    "homepage": "https://github.com/mlhaufe/comb-inheritance#readme",
+    "bugs": {
+        "url": "https://github.com/mlhaufe/comb-inheritance/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mlhaufe/comb-inheritance.git"
+    },
+    "license": "AGPL-3.0-only",
+    "author": "Michael L Haufe <tno@thenewobjective.com> (https://thenewobjective.com)",
+    "type": "module",
+    "main": "./src/index.mjs",
+    "exports": {
+        ".": {
+            "import": "./src/index.mjs"
+        }
+    },
+    "files": [
+        "src/**/*.mjs",
+        "README.md",
+        "LICENSE"
+    ],
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "test": "node --test src/tests/*.test.mjs"
+    }
+}
