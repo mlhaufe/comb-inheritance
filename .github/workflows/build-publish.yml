@@ -4,6 +4,10 @@ on:
   release:
     types: [created]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   build:
     name: Build
@@ -27,6 +31,6 @@ jobs:
         run: npm test
 
       - name: Publish to NPM
-        run: npm publish --access public --registry https://registry.npmjs.org
+        run: npm publish --access public --provenance
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
